@@ -57,6 +57,11 @@ main {
 	grid-area: main;
 }
 
+form {
+	display: flex;
+	flex-direction: column;
+}
+
 main img {
     object-fit: cover;
     margin-right: 20px;
@@ -65,7 +70,7 @@ main img {
 }
 
 main li:before {
-    content: '🍡';
+    content: 'ðŸ¡';
     margin-left: -31px;
     padding-right: 8px;
 }
@@ -82,25 +87,12 @@ main, section, footer {
     padding: 20px;
 }
 
-#race {
-	display: flex;
-}
-#race article{
-	grid-area: "race";
-	display: flex;
-	justify-content: center;
+form {
+display: flex;
 	flex-direction: column;
-	align-items: center;
-}
-#store article{
-	grid-area: "store";
-	display: flex;
-	flex-direction: column;
-	align-items: center;	
-	justify-content: center;
 }
 
-.store-button { /* used for store link in "Get refreshed" section */
+submit { /* used for store link in "Get refreshed" section */
     width: 25%;
     padding: 10px;
     border-radius: 5px;
@@ -114,6 +106,12 @@ main, section, footer {
 footer {
 	grid-area: footer;
 }
+
+form span {
+	line-height: 4rem;
+}
+
+
 
 @media only screen and (max-width: 800px) {
 	body { 
